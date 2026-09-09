@@ -1,0 +1,180 @@
+/* 
+  Antenity - Construction Estimation Services
+  Main Stylesheet
+*/
+
+:root {
+  --primary-color: #0d47a1; /* Professional Dark Blue */
+  --secondary-color: #ff8f00; /* Amber/Orange for CTA */
+  --dark-color: #1a1a2e; /* Very dark blue/black for text/bg */
+  --light-color: #f8f9fa; /* Light grey for sections */
+  --text-color: #333333;
+  --muted-text: #6c757d;
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --border-color: #e0e0e0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Custom Buttons */
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 2px solid var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary-custom:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-secondary-custom {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 2px solid var(--secondary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-secondary-custom:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 15px 0;
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar-logo {
+  height: 55px;
+  width: auto;
+}
+.nav-link {
+  font-weight: 500;
+  color: var(--dark-color) !important;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(13, 71, 161, 0.8), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  color: white;
+}
+.hero h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Section Padding */
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Service Cards */
+.service-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-bottom: 4px solid transparent;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  border-bottom: 4px solid var(--secondary-color);
+}
+.service-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* How It Works */
+.step-card {
+  text-align: center;
+  padding: 30px;
+}
+.step-number {
+  width: 60px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 60px 0 20px;
+}
+footer a {
+  color: #a0a0a0;
+}
+footer a:hover {
+  color: var(--secondary-color);
+}
+footer h5 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
